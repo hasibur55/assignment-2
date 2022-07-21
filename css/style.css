@@ -1,15 +1,8 @@
 body {
     font-family: 'Kanit', sans-serif;
     background-color: #ecf2f7;
+    margin: 0;
 }
-
-section {
-    width: 1600px;
-    margin: 0 auto;
-    background-color: #ecf2f7;
-}
-
-/* media querie */
 
 /* -------------------
    header style 
@@ -20,9 +13,8 @@ section {
     margin-top: 50px;
 }
 
-
 .head-content {
-    width: 1321px;
+    width: 90%;
     height: 646px;
     background-color: #161616;
     border-radius: 30px;
@@ -34,28 +26,29 @@ section {
     display: flex;
     justify-items: center;
     align-items: center;
-    gap: 24px;
+    /* gap: 24px; */
 
 }
 
 .head-text-button {
     color: #ffffff;
     width: 50%;
-    position: relative;
-    left: 140px;
+    padding: 10%;
+    /* position: relative;
+    left: 140px; */
 }
 
 
 .head-text-button h2 {
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 80px;
+    font-size: 2em;
+    /* font-weight: 2em; */
+    /* line-height: 80px; */
 }
 
-.head-text-button p {
+/* .head-text-button p {
     font-size: 18px;
     text-align: justify;
-}
+} */
 
 .head-text-button button {
     background-color: #DD0000;
@@ -76,18 +69,18 @@ section {
 
 
 .head-img {
-    overflow: hidden;
+    width: 50%;
 }
 
 .head-img img {
-    width: 800px;
+    width: 100%;
 
 }
 
 /* header design end  */
 
 #fixed-manu {
-    position: relative;
+    /* position: relative; */
     width: 312px;
     height: 312px;
     background: #161616;
@@ -97,9 +90,9 @@ section {
     gap: 30px;
     justify-content: center;
     align-items: center;
-    position: static;
-    margin-left: 140px;
-    margin-top: 130px;
+    /* position: static; */
+    /* margin-left: 140px;
+    margin-top: 130px; */
 }
 
 .button-1,
@@ -127,20 +120,21 @@ a {
  */
 
 .stycky {
-    width: 30%;
+    margin-right: 20px;
+    
 }
 
 .blog-items {
-    width: 60%;
-    margin-top: 130px;
-    margin-right: 140px;
+    /* width: 60%; */
+    /* margin-top: 130px;
+    margin-right: 140px; */
 }
 
 .blog {
     width: 100%;
     height: 362px;
     border: 1px solid #c8b5b5;
-    border-radius: 10px;
+    border-radius: 15px;
     padding-bottom: 20px;
 }
 
@@ -152,14 +146,19 @@ a {
 
 #main-manu-item {
     display: flex;
-    flex-direction: row;
-    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    /* flex-direction: row;
+    overflow: hidden; */
 }
 
 /* right side design  */
 .image img {
-    width: 312px;
+    width: 100%;
     height: 175px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 
@@ -175,7 +174,6 @@ a {
 /*----------------------
  blog style finish 
 -------------------- */
-
 
 /* upcoming start  */
 .up-coming-mach {
@@ -234,4 +232,13 @@ footer nav ul li a {
     color: aqua;
     font-size: 30px;
 
+}
+@media screen and (min-width: 688) and(max-width: 992){
+    #main-manu-item {
+            display: flex;
+            width: 90%;
+            margin: auto;
+            margin-top: 40px;
+            flex-direction: column;
+        }
 }
